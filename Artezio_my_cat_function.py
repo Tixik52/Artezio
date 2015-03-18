@@ -4,13 +4,12 @@ def my_cat_function(*file):
 		print("Not args", "\n")
 	else:
 		for x in range(0,len(file)):
-			#print("%a: \n" % file[x])
 			if(os.path.isfile(file[x])):
 				f = open(file[x], 'r', encoding="utf-8")
 				print(f.read())
 				f.close()
 			else:
-				print("File isn't found", "\n")
+				print("File %a isn't found" % file[x], "\n")
 
 
 import os
