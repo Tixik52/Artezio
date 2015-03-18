@@ -24,7 +24,6 @@ def my_cat_function_write(m, fileW, *fileR):
 		for y in fileW:
 			nf = open(y, m, encoding="utf-8")
 			for x in fileR:
-				print("x:", x)
 				f = my_cat_function_read(x)
 				nf.write(f)
 			nf.close()
